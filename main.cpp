@@ -22,7 +22,7 @@ void sphereArea(){
 void converttwo() {
 
     double c, ccon;
-    cout << "Enter the celsius degree in doube"<<endl;
+    cout << "Enter the celsius degree in double"<<endl;
     cin>>c;
     ccon = ((c*1.8) + 32);
     cout<<" the fahrenheit degrees are equivalent to given celsius is " <<ccon << endl;
@@ -53,6 +53,18 @@ void pot() {
 
 int main()
 {
-    sphereArea();
+    int menu;
+    cout << "1. Hypotnuse Cal\n2. F to C\n3. C to F\n4. Volume of a Sphere\n: ";
+    cin >> menu;
+    switch(menu) {
+    case 1: pot();
+            break;
+    case 2: convert();
+            break;
+    case 3: converttwo();
+            break;
+    case 4: sphereArea();
+            break;
+    }
     return 0;
 }
